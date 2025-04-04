@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="name-input-section">
+            <h1>It's Your Birthday!</h1>
+            <p>Enter your name to receive your special birthday wishes:</p>
+            <input type="text" id="nameInput" placeholder="Your Name">
+            <div>
+                <label for="backgroundUpload" class="btn upload-btn">Upload Background Image</label>
+                <input type="file" id="backgroundUpload" accept="image/*" style="display:none;">
+                <span id="filename">No file chosen</span>
+            </div>
+            <button id="wishButton" class="btn">Get Wishes!</button>
+        </div>
+        <div id="wish-section" style="display: none;">
+            <h1 id="birthday-title">Happy Birthday, [Name]!</h1>
+            <p id="birthday-message"></p>
+            <button id="resetBtn" class="btn">Reset</button>
+        </div>
+    </div>
+    <div id="confetti-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

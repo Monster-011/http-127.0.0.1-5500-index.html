@@ -46,14 +46,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const wishes = [
-          `May your day be filled with joy and laughter,!`,
-          `Wishing you a year filled with happiness and success,!`,
-          `May all your dreams come true on your special day,!`,
-          `Sending you warm wishes and a day as bright as your smile,!`,
-          `Happy birthday, ${name}! May this year bring you endless blessings.`,
+          `...May your day be filled with joy😃and laughter😁!`,
+          `..Wishing you a year filled with happiness😆😆and success,!`,
+          `May all your dreams🤙🤙come true on your special day,!`,
+          `Sending you warm wishes🎉and a day as bright as your smile☺️☺️,!`,
+          `Happy birthday🎂🎂, ${name}! May this year bring you endless blessings✨✨.`,
       ];
 
-      birthdayTitle.textContent = `Happy Birthday, ${name}!`;
+      birthdayTitle.textContent = `Happy Birthday🎂✌️, ${name}!`;
       birthdayMessage.innerHTML = wishes.join("<br><br>");
 
       nameInputSection.style.display = "none";

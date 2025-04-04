@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="name-input-section">
+            <h1>It's Your Birthday!</h1>
+            <p>Enter your name to receive your special birthday wishes:</p>
+            <input type="text" id="nameInput" placeholder="Your Name">
+            <button id="wishButton">Get Wishes!</button>
+        </div>
+        <div id="wish-section" style="display: none;">
+            <h1 id="birthday-title">Happy Birthday, [Name]!</h1>
+            <p id="birthday-message"></p>
+            <div class="controls">
+                <button id="playMusicBtn">Play Birthday Song</button>
+                <button id="shareBtn">Share Wishes</button>
+            </div>
+        </div>
+    </div>
+    <audio id="birthdaySong" src="WhatsApp Video 2025-04-03 at 21.57.07_f823746c.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
+

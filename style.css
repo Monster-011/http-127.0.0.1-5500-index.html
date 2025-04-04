@@ -1,0 +1,138 @@
+body {
+  font-family: "Georgia", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("HD-landscape-photographs-51.jpg"); /* Landscape for first page */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #5e087a;
+  transition: background-image 1s ease;
+}
+
+.container {
+  background-color: rgba(212, 231, 236, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(5, 185, 245);
+  text-align: center;
+  max-width: 90%;
+  width: 500px;
+  margin: 20px;
+}
+
+#name-input-section {
+  animation: fadeInSlideUp 1s ease-out;
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#wish-section {
+  margin-top: 20px;
+  animation: fadeInSlideUp 1s ease-out;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #6d41cc;
+  border-radius: 5px;
+  width: 80%;
+  font-family: "Times New Roman", serif;
+}
+
+.btn {
+  background-color: #c3e909;
+  color: rgb(130, 7, 7);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Garamond", serif;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #094b0c;
+  color: rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+#birthday-title {
+  color: #af2f19;
+  font-family: "Brush Script MT", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#birthday-message {
+  font-family: "Palatino", serif;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Confetti styles */
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #f00;
+  opacity: 0.7;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  #birthday-title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+}
+
